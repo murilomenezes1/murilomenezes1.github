@@ -1,0 +1,242 @@
+
+
+.header {
+  display: grid;
+  position: fixed;
+  margin-left: 0.5rem;
+  min-width: 6rem;
+  max-height: 60rem;
+  height: 30rem;
+  width: 6rem;
+  border-style: solid;
+  border-width: 0.1rem;
+  padding: 0.1rem;
+  background-color: gold;
+}
+
+.container {
+  align-items: center;
+  background-color: white;
+  font-size: 1rem;
+  width:70%;
+  height:50%;
+  max-width: 60%;
+  min-width: 50%;
+  padding: 1.5rem;
+  color: #65008c;
+}
+.parent {
+  background-color: white;
+  display: grid;
+  color: #65008c;
+
+}
+
+.titulo{
+  font-family: Bodoni;
+  font-size: 3em;
+  margin-left: 50%;
+  top: 2.5%;
+   width: 70%;
+  height: 50%;
+  max-width:100%;
+  min-width: 70%;
+}
+
+.logo {
+  display: grid;
+  margin-left: 0em;
+    top: 1rem;
+  width: 6em;
+    height: 3rem;
+}
+
+.image_principal {
+
+  display: flex;
+   margin-left: 40%;
+   margin-top: 5em;
+  top: 50%;
+  width: 70%;
+  height: 50%;
+   max-width: 70%;
+   min-width:40%;
+ 
+  margin-bottom: 1.5em;
+}
+
+.descricoes{
+  display: grid;
+  margin-left: 50%;
+  font-family: Arial;
+  font-size: 1em;
+  width: 50%;
+  max-width: 100%;
+  min-width:20%;
+  color: #65008c;
+}
+
+.categorias_laterais {
+  display: grid;
+  width: 50%;
+  height: 6rem;
+  font-family: Arial;
+  font-size: 1rem;
+  max-width: 1rem;
+  min-width: 1rem;
+  color: #ebc54a;
+  }
+.conteudo_intext{
+  display: flex;
+  justify-content: space-between;
+  max-width: 70%;
+  min-width:40%;
+  font-size: 1em;
+  margin-left: 40%;
+  margin-top: 10%;
+  padding: 1rem;
+  
+}
+.descricoes_categorias{
+  display: flex;
+  margin-left: 10%;
+
+}
+.imagem {
+  display: flex;
+  margin-left: 10%;
+  width: 20%;
+  height: 20%;
+}
+.parent2 {
+
+display: grid;
+grid-template-columns: 1fr;
+}
+.parent3 {
+display: grid;
+grid-template-columns: 1fr;
+
+
+}
+.equipe {
+  margin-left: 50%;
+  margin-top: 3%;
+  height: 1em;
+  font-size: 1em;
+  font-family: Arial;
+  
+}
+.materiais {
+  margin-left: 80%;
+  margin-top: 3%;
+  height: 1em;
+  font-size: 1em;
+  font-family: Arial;
+  
+}
+@media (max-width: 360px) {
+  .container {
+  align-items: center;
+  background-color: white;
+  font-size: 1rem;
+  width:60%;
+  height:50%;
+  max-width: 60%;
+  min-width: 50%;
+  padding: 1.5rem;
+}
+  .header {
+  display: grid;
+  position: fixed;
+  min-width: 3.3rem;
+  max-height: 80rem;
+  width: 3.3rem;
+  height: 20rem;
+  left: 0%;
+  border-style: solid;
+  border-width: 0.1rem;
+  padding: 0.1rem;
+}
+.categorias_laterais {
+  display: flex;
+  width: 3rem;
+  height: 1rem;
+  font-size: 0.5rem;
+  max-width: 1rem;
+  min-width: 1rem;
+  }
+  .titulo{
+  font-size: 1em;
+  margin-left: 40%;
+  top: 2.5%;
+   width: 70%;
+  height: 50%;
+  max-width:100%;
+  min-width: 70%;
+}
+.image_principal {
+
+  display: flex;
+   margin-left: 30%;
+   margin-top: 1em;
+  top: 50%;
+  width: 70%;
+  height: 50%;
+   max-width: 70%;
+   min-width:40%;
+ 
+  margin-bottom: 1.5em;
+}
+
+.logo {
+  display: grid;
+  margin-left: 0em;
+    top: 1rem;
+  width: 3.3em;
+    height: 3rem;
+}
+.descricoes{
+  display: grid;
+  margin-left: 30%;
+  font-size: 0.5em;
+  width: 70%;
+  max-width: 100%;
+  min-width:20%;
+}
+.conteudo_intext{
+  display: flex;
+  max-width: 70%;
+  min-width:40%;
+  font-size: 0.5em;
+  margin-left: 20%;
+  margin-top: 10%;
+  padding: 1rem;
+}
+.descricoes_categorias{
+  display: flex;
+  margin-left: 10%;
+  font-size: 1em;
+
+}
+
+.equipe {
+  margin-left: 30%;
+  font-size: 0.5em;
+  
+}
+.materiais {
+  margin-left: 70%;
+  font-size: 0.5em;
+  
+}
+
+
+
+}
+
+/*projeto.html*/
+
+
+  
+
