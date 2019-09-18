@@ -6,20 +6,22 @@
     <link href = "assets/css/style.css" rel="stylesheet">
     <link href = "https://fonts.googleapis.com/css?family=bodoni">
     <link href = "https://fonts.googleapis.com/css?family=Arial">
+    <script src="assets/js/codes.js"></script>
+  	<script src="assets/js/index.js"></script>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
 	<div class="container">
+	<ul> 
 		<header class="header">
+			
 	    <img class="logo" src="assets/img/logo.png" alt="logo">
-	      <li class="categorias_laterais"><a href="categoria.html">Design</a></li>
-	      <li class="categorias_laterais"><a href="categoria.html">Física</a></li>
-	      <li class="categorias_laterais"><a href="categoria.html">Matemática</a></li>
-	      <li class="categorias_laterais"><a href="categoria.html">Programação</a></li>
-	      <li class="categorias_laterais"><a href="categoria.html">Laboratórios</a></li>
+	    {{#each areasdoconhecimento}}
+	      <li class="categorias_laterais"><a href="categoria.html?key={{@key}}">{{this.categoria}}</a></li>
+	      {{/each}}
 	 	 </header>
-
+	</ul>
 
 		
 		<img class="image_principal" src="assets/img/areas.png">
@@ -37,52 +39,20 @@
 
 		<ul>
 		<div class="parent">
-			<li class="conteudo_intext"><a href="categoria.html">Design</a>
-				<img class="imagem" src="assets/img/design.jpg" alt="design">
+			{{#each areasdoconhecimento}}
+			<li class="conteudo_intext"><a href="categoria.html?key={{@key}}">{{this.categoria}}</a>
+				<img class="imagem" src="assets/img/{{this.imagem}}" alt="design">
 			<div class="descricoes_categorias">
 
 				<p>
-					Aqui você encontrará os projetos de Design
+					{{this.descricao}}
 
 				</p>
-			</div>
-			</li>
-			<li class="conteudo_intext"><a href="categoria.html">Física</a>
-				<img class="imagem" src = "assets/img/einstein.png" alt="fisica">
-				<div class="descricoes_categorias">
-					
-				<p>
-					Aqui você encontrará os projetos de Física
-				</p>
-				</div>
-			</li>
-			<li class="conteudo_intext"><a href="categoria.html">Matemática</a>
-				<img class="imagem" src = "assets/img/matematica.jpg" alt="matematica">
-				<div class="descricoes_categorias">
-
-				<p>
-					Aqui você encontrará os projetos de Matemática
-				</p>
-			</div>
-			</li>
-			<li class="conteudo_intext"><a href="categoria.html">Programação</a>
-				<img class="imagem" src = "assets/img/programacao.jpg" alt="programacao">
-				<div class="descricoes_categorias">
-
-				<p>
-					Aqui você encontrará os projetos de Programação
-				</p>
-			</div>
-			</li>
-			<li class="conteudo_intext"><a href="categoria.html">Laboratórios</a>
-				<img class="imagem" src="assets/img/laboratorio.jpg" alt="laboratorios">
-				<div class="descricoes_categorias">
-
-				<p>
-					Aqui você encontrará os projetos realizados nos laboratórios
-				</p>
-			</div>
-			</li>
+							
+							</li>
+						{{/each}}
+			
+			
 		</div>
 		</ul>
 		</div>

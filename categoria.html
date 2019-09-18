@@ -5,23 +5,26 @@
   <link href = "assets/css/reset.css" rel="stylesheet">
   <link href = "assets/css/style.css" rel="stylesheet"> 
   <link href = "https://fonts.googleapis.com/css?family=bodoni">
-  <link href = "https://fonts.googleapis.com/css?family=Arial">   	
+  <link href = "https://fonts.googleapis.com/css?family=Arial">  
+  <script src="assets/js/codes.js"></script>
+  <script src="assets/js/categoria.js"></script> 	
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"> 
 </head>
 <body>
-  <div class="container">
-      <header class="header">
+ <div class="container">
+  <ul> 
+    <header class="header">
+      
       <img class="logo" src="assets/img/logo.png" alt="logo">
-        <li class="categorias_laterais"><a href="categoria.html">Design</a></li>
-        <li class="categorias_laterais"><a href="categoria.html">Física</a></li>
-        <li class="categorias_laterais"><a href="categoria.html">Matemática</a></li>
-        <li class="categorias_laterais"><a href="categoria.html">Programação</a></li>
-        <li class="categorias_laterais"><a href="categoria.html">Laboratórios</a></li>
+      {{#each areasdoconhecimento}}
+        <li class="categorias_laterais"><a href="categoria.html?key={{@key}}">{{this.categoria}}</a></li>
+        {{/each}}
      </header>
+  </ul>
 
   
-    <img class= "image_principal" src="assets/img/einstein.png" alt="Albert EInstein; um grande físico">
+    <img class= "image_principal" src="assets/img/{{this.imagem}}.png" alt="Albert EInstein; um grande físico">
     
 
     <p
@@ -32,12 +35,11 @@
 
     <ul>
     <div class = "parent" >
-    <li class="conteudo_intext"><a href="projeto.html">Sensores: estação metereológica</a>
+      {{#each categoria}}
+    <li class="conteudo_intext"><a href="projeto.html?key={{@key}}">{{this.titulo}}</a>
       <img class="imagem" src="assets/img/arduino-uno.png" alt="Arduino usado para programaco do sensores" >
     </li>
-    <li class="conteudo_intext"><a href="projeto.html">Dispositivo motor</a>
-      <img  class="imagem" src="assets/img/pwm.jpg" alt="PWM">
-    </li>
+
     </div>
     </ul>
     </div>
